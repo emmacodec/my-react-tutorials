@@ -1,28 +1,39 @@
 import React from "react";
 import {render} from "react-dom";
-class Secret extends React.Component {
+class ShallowMerge extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'top secret',
+            user: {
+                name: 'Emmanuel',
+                colors: {
+                    favorite: ''
+                }
+            }
         };
         this.onButtonClick=this.onButtonClick.bind(this);
     }
     onButtonClick() {
-        this.setState(() => ( {
-            name: 'Dan'
-        }));
+        this.setState  ( {
+            user: {
+                colors: {
+                    favorite: 'blue'
+                }
+            }
+        });
     }
+        
+    
     render() {
         return (
             <div>
-                <h1>My name is {this.state.name}</h1>
-                    <button onClick={this.onButtonClick}>reveal the secret!</button>
+                <h1>My favourite color is {this.state.user.favorite}and my name is {this.state.user.name}</h1>
+                    <button onClick={this.onButtonClick}>show the color!</button>
             </div>
         )
     }
 }
 render(
-    <Secret/>,
+    <ShallowMerge/>,
     document.getElementById('root')
 )

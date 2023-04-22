@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 import * as API from '../../shared/http';
 import content from './content';
-import image from './image';
+import image from './Image';
 import link from './link';
 import PostActionSection from './PostActionSection';
 import comments from '../comments/comments';

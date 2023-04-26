@@ -16,9 +16,9 @@ class App extends componet {
       error: null,
       loading: false,
       post: []
-      endpoint: $ {process.env
+      endpoint: `$ {process.env
         .Endpoint}/posts?_page=1&_sort=date&_order=DESC&_embed=comments&_embed
-        expand=user&_embedlike
+        expand=user&_embedlike`
       };
     }
     static propTypes = {

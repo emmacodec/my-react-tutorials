@@ -1,13 +1,13 @@
 import React, {component} from "react";
 import propTypes from 'prop-types';
 
-import * as API from '../../shared/http';
+import * as API from './http';
 import content from './content';
 import image from './Image';
 import link from './link';
 import PostActionSection from './PostActionSection';
-import comments from '../comments/comments';
-import loader from '../loader';
+import comments from './comments';
+import loader from './loader';
 
 export class post extends component {
     static propTypes= {

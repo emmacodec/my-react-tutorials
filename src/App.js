@@ -1,9 +1,9 @@
-import React, {componet} from "react";
+import React, { Component } from "react";
 import propTypes from 'prop-types';
 import {connect} from 'react-redux';
-
-import ErrorMessage from './error';
-import Nav from './navbar';
+ 
+import {createError} from './error';
+// import Nav from './navbar';
 import Loader from './loader';
 
 /**
@@ -12,7 +12,8 @@ import Loader from './loader';
  * @module letters/component
  */
 
-class App extends componet {
+class App extends Component {
+
   componetDidMount() {
     const embeddedState = document.getElementById('initialState');
     if (embeddedState) {
@@ -24,13 +25,12 @@ class App extends componet {
     if (this.props.error) {
       return (
         <div className="app">
-          <ErrorMessage error={this.props.error} />
+          <createError error={this.props.error} />
         </div>
       );
     }
     return (
       <div className="app">
-        <Nav />
         {this.props.loading ? (
           <div className="loading">
              <Loader />

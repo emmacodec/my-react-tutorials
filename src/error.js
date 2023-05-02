@@ -1,4 +1,4 @@
-import * as types from '../constants/types';
+// import * as types from '../constants/types';
 
 /**
  * create an error
@@ -10,7 +10,7 @@ import * as types from '../constants/types';
  */
 export function createError(error,info) {
     return {
-        type: types.app.Error,
+        type: /*types.app.Error*/ ' ',
         error,
         info
     };

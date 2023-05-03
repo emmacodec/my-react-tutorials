@@ -1,0 +1,1 @@
+// Testing actions in redux with the comment component

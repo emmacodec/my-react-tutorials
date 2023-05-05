@@ -4,6 +4,11 @@ $fa-font-path: '../../static/assets/fonts';
 @import 'variable';
 @import 'global';
 
+@import 'pages/home.js';
+@import 'pages/post.js';
+@import 'pages/login.js';
+@import 'pages/404.js';
+
 @import 'src/DisplayMap';
 @import 'src/locationTypeAhead';
 @import 'src/logo';

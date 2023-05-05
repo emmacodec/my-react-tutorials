@@ -9,6 +9,7 @@
     "enroute": "^1.0.1",
     "environs": "^0.4.5",
     "invariant": "^2.2.4",
+    "iodash": "^0.0.1-security",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",

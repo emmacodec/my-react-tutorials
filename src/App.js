@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 import {connect} from 'react-redux';
  
 import {createError} from './error';
-// import Nav from './navbar';
+ import Nav from './navbar';
 import Loader from './loader';
 
 /**

@@ -1,6 +1,6 @@
 import ProtoTypes from 'prop-types';
 import { Children,cloneElement } from 'react';
-import {navigate} from '../../history';
+import {navigate} from './history/index';
 
 /**
  * Link component helps you navigate around the app
